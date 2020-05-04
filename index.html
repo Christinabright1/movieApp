@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Movie Info</title>
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!--Navigation bar-->
+  <nav>
+    <div class="nav-wrapper grey darken-3">
+      <a href="#" class="brand-logo" id="navBar"> MovieApp </a>
+      
+    </div>
+  </nav>
+       <!--container for search bar-->
+        <div class="container  grey darken-2">
+            <h4 class="text-center">Search for any movie</h2>
+              <form id="form">
+            <div>
+                <div class="row">
+                    <div class="input-field col s12">
+            <input id="searchInput" type="text" placeholder="Enter Movie">
+                      
+                    </div>
+            </div>
+        </div>
+              </form>
+  
+
+    <!--Container where the movie is going to display-->
+    <div class="container">
+        <div id="movies"></div>
+    </div>
+    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</body>
+</html>
